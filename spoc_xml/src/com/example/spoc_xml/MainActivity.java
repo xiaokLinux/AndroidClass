@@ -49,7 +49,7 @@ public class MainActivity extends Activity {
 				// TODO Auto-generated method stub
 				//ÉèÖÃtvµÄÑÕÉ«
 				
-				tv.setTextColor(colors.getColor(colorindex++, 0));
+				tv.setTextColor(colors.getColor((colorindex++)%4, 0));
 			}
 		});
 		
