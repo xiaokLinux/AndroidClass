@@ -1,6 +1,7 @@
 package com.example.spoc_xml;
 
 import android.os.Bundle;
+import android.R.integer;
 import android.app.Activity;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
@@ -18,6 +19,8 @@ public class MainActivity extends Activity {
 	TypedArray colors,sizes,imgs;
 	
 	int colorindex=0;
+	int sizeindex=0;
+	int imgindex=0;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -32,13 +35,18 @@ public class MainActivity extends Activity {
 		//res
 		Resources res=this.getResources();
 		colors=res.obtainTypedArray(R.array.colors);
+		sizes=res.obtainTypedArray(R.array.sizes);
+		imgs=res.obtainTypedArray(R.array.imgs);
 		
+		//设置默认图片
+		iv.setImageResource(imgs.getResourceId((imgindex++)%10,0));
 		bt1.setOnClickListener(new Button.OnClickListener() {
 			
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				//设置tv的字体大小
+				tv.setTextSize(sizes.getDimension((sizeindex++)%3,0));
 			}
 		});
 		
@@ -59,7 +67,7 @@ public class MainActivity extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				//设置iv的资源id
-				
+				iv.setImageResource(imgs.getResourceId((imgindex++)%10,0));
 			}
 		});
 	}

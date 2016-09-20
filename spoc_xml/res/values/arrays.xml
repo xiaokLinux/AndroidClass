@@ -6,4 +6,21 @@
     <item name="green" type="color" format="color">#00FF00</item>
     <item name="yellow" type="color" format="color">#FFFF00</item>
     </array>
+    <array name="sizes">
+    <item name="min" format="dimension" type="dimen">10sp</item>
+    <item name="mid" format="dimension" type="dimen">14sp</item>
+    <item name="max" format="dimension" type="dimen">18sp</item>
+    </array>
+    <array name="imgs">
+    <item name="img0" format="integer" type="id">@drawable/img1</item>
+    <item name="img1" format="integer" type="id">@drawable/img2</item>
+    <item name="img2" format="integer" type="id">@drawable/img3</item>
+    <item name="img3" format="integer" type="id">@drawable/img4</item>
+    <item name="img4" format="integer" type="id">@drawable/img5</item>
+    <item name="img5" format="integer" type="id">@drawable/img6</item>
+    <item name="img6" format="integer" type="id">@drawable/img7</item>
+    <item name="img7" format="integer" type="id">@drawable/img8</item>
+    <item name="img8" format="integer" type="id">@drawable/img9</item>
+    <item name="img9" format="integer" type="id">@drawable/img10</item>
+    </array>
 </resources>
