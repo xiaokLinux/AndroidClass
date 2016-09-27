@@ -2,8 +2,12 @@ package com.example.task3;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.text.Layout;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -11,6 +15,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -24,10 +29,16 @@ public class MainActivity extends Activity {
 	int imageIds[];
 	String points[];
 	int contextPosition;
+	LinearLayout diaglogLayout;
+	AlertDialog.Builder builder;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.my_main);
+		setContentView(R.layout.wuwei_main);
+		 builder=new AlertDialog.Builder(this);
+		diaglogLayout=(LinearLayout) LayoutInflater.from(MainActivity.this).inflate(R.layout.dialog, null,false);
+		builder.setView(diaglogLayout);
+		builder.create().show();
 		imageIds=new int[]{R.drawable.wenda,R.drawable.zheda,R.drawable.xihu
 				,R.drawable.gugong};
 		img1=(ImageView) findViewById(R.id.imageView1);
