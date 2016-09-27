@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sizes">
+        <item >小号</item>
+        <item >中号</item>
+        <item >大号</item>
+    </string-array>
+    <string-array name="colors">
+        <item >红色</item>
+        <item >黄色</item>
+        <item >蓝色</item>
+    </string-array>
+    <array name="coloevalues">
+    <item type="color" name="red" format="color">#FF0000</item>
+    <item name="yellow" type="color" format="color">#FFFF00</item>
+    <item name="blue" type="color" format="color">#0000FF</item>
+    </array>
+    <array name="sizevalues">
+    <item name="min" format="dimension" type="dimen">10sp</item>
+    <item name="mid" format="dimension" type="dimen">18sp</item>
+    <item name="max" format="dimension" type="dimen">26sp</item>
+    </array>
+</resources>
