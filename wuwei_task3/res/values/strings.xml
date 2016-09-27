@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">task3</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="add">添加风景</string>
+    <string name="reset">重置风景</string>
+    <string name="context_add">添加</string>
+    <string name="context_replay">修改</string>
+    <string name="context_del">删除</string>
+
+</resources>

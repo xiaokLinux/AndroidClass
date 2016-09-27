@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/context_add" android:title="@string/context_add"></item>
+    <item android:id="@+id/context_replay" android:title="@string/context_replay"></item>
+    <item android:id="@+id/context_del" android:title="@string/context_del"></item>
+
+</menu>
